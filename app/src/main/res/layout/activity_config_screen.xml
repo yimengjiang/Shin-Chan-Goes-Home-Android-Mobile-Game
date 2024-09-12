@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_dark_sky_with_grass_and_stars"
+    android:id="@+id/configuration"
+    tools:context=".ConfigScreen" >
+
+
+    <TextView
+        android:id="@+id/game_mode"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:paddingVertical="20dp"
+        android:gravity="center"
+
+        android:text="@string/game_mode"
+        android:textSize="64sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/luckiest_guy"
+        android:lineHeight="72sp"
+        android:shadowColor="#000000"
+        android:shadowRadius="60"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/configuration_area"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/rounded_corner_menu"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        android:padding="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/name_container"
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp">
+
+            <ImageView
+                android:id="@+id/name_icon"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0"
+
+                android:contentDescription="@string/username_icon"
+                app:srcCompat="@drawable/username_icon" />
+
+            <EditText
+                android:id="@+id/name_input"
+
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+
+                android:autofillHints=""
+                android:backgroundTint="#FFFFFF"
+
+                android:fontFamily="@font/fredoka_one"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#BBBBBB"
+                android:textColorLink="#FFFFFF"
+                android:shadowColor="#000000"
+                android:shadowRadius="20" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/difficulty_container"
+            android:layout_width="300dp"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp">
+
+            <ImageView
+                android:id="@+id/difficulty_icon"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0"
+                android:contentDescription="@string/no_difficulty"
+
+                android:scaleType="fitCenter"
+
+                app:srcCompat="@drawable/level0" />
+
+            <Button
+                android:id="@+id/difficulty_button"
+
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_inside_menu"
+
+                android:text="@string/select_difficulty"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fredoka_one"
+                android:shadowColor="@color/black"
+                android:shadowRadius="15"
+
+                android:onClick="updateDifficultyViews" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/character_container"
+            android:layout_width="300dp"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp">
+
+            <ImageView
+                android:id="@+id/character_icon"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0"
+                android:contentDescription="@string/no_character"
+
+                android:scaleType="centerInside"
+
+                app:srcCompat="@drawable/who" />
+
+            <Button
+                android:id="@+id/character_button"
+
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_inside_menu"
+
+                android:text="@string/select_character"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fredoka_one"
+                android:shadowColor="@color/black"
+                android:shadowRadius="15"
+
+                android:onClick="updateCharacterViews" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/randomize"
+
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_corner_inside_menu"
+
+            android:fontFamily="@font/syncopate"
+            android:onClick="randomizeInputs"
+            android:shadowColor="@color/black"
+            android:shadowRadius="20"
+            android:text="@string/randomize"
+            android:textColor="@color/white"
+
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/play"
+
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_corner_play"
+
+        android:text="@string/play"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/happy_monkey"
+        android:shadowColor="@color/black"
+        android:shadowRadius="20"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/configuration_area" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

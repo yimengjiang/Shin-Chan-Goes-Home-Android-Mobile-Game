@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_dark_sky_with_grass_and_stars">
+
+    <TextView
+        android:id="@+id/score_text_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:padding="28dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="20"
+        android:text="@string/zero_value"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/congrats_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="288dp"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:padding="20dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="20"
+        android:text="@string/congrats"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/restart_button_win"
+        android:layout_width="302dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_corner_end"
+        android:fontFamily="@font/luckiest_guy"
+        android:text="@string/restart_game"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/exit_button_win"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/exit_button_win"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/rounded_corner_end"
+        android:fontFamily="@font/luckiest_guy"
+        android:text="@string/exit_game"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

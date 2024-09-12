@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">"Shin-Chan Goes Home"</string>
+    <string name="displayed_app_name">"Shin-Chan"</string>
+
+    <string name="game_title">"Shin-Chan\nGoes Home"</string>
+    <string name="tap_to_play">"TAP ANYWHERE TO PLAY"</string>
+
+    <string name="game_mode">"Game        \n        Mode"</string>
+
+    <string name="username_icon">"username icon"</string>
+    <string name="name">"Name"</string>
+    <string name="select_difficulty">"Difficulty"</string>
+    <string name="select_character">"Character"</string>
+
+    <string name="no_difficulty">"No difficulty"</string>
+    <string name="easy">"Easy"</string>
+    <string name="medium">"Medium"</string>
+    <string name="hard">"Hard"</string>
+
+    <string name="no_character">"No character"</string>
+    <string name="xiaoxin">"Xiaoxin"</string>
+    <string name="xiaobai">"Xiaobai"</string>
+    <string name="nini">"Nini"</string>
+
+    <string name="randomize">"Randomize"</string>
+    <string name="play">"Play"</string>
+
+    <string name="name_label">"Name: "</string>
+    <string name="score_label">"Score: "</string>
+    <string name="level_label">"Level: "</string>
+    <string name="lives_label">"Lives: "</string>
+
+    <string name="up_button">"Up"</string>
+    <string name="down_button">"Down"</string>
+    <string name="left_button">"Left"</string>
+    <string name="right_button">"Right"</string>
+
+    <string name="zero_value">"0"</string>
+
+    <string name="restart_game">"Restart Game"</string>
+    <string name="exit_game">"Exit Game"</string>
+
+    <string name="congrats">"Congrats!"</string>
+    <string name="champion">"Congratulations!\nYou are a champion!"</string>
+    <string name="winner">"Congratulations!\nYou won the game!"</string>
+
+</resources>
